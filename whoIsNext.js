@@ -1,4 +1,4 @@
-var whoIsNext = function(names[], number){
+var whoIsNext = function(names, number){
   for(i=1; queue.length < number; i++){
     var queue = queue + (names*i)
   }
