@@ -15,13 +15,27 @@ When you have a program that generates this pattern, define a variable size = 8 
 */
 
 var size = 8;
-  for(var i=1; i<=size; i++){
-    for(var j=1; j<=size; j++){
-      if(j % 2 == 0) {
-        console.log("#")
-      } else {
-        console.log(" ")
+for (var i = 1; i <= size; i++) {
+    // linea impar
+    if (i % 2 != 0) {
+        for (var j = 1; j <= size; j++) {
+            if (j % 2 != 0) {
+                console.log(" ");
+            } else {
+                console.log("#");
+            }
+        }
+        console.log("\n");
+    } 
+    //linea par 
+    else {
+        for (var k = 1; k <= size; k++) {
+            if (k % 2 != 0) {
+                console.log("#")
+            } else {
+                console.log(" ")
+            }
+        }
+        console.log("\n");
     }
-  console.log("\n")
-  }
 }
