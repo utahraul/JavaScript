@@ -27,13 +27,11 @@ for (var i = 1; i <= size; i++) {
     }
     //linea par
     else {
-      if (i % 2 != 0) {
         for (var k = 1; k <= size; k++) {
           if (k % 2 != 0) {string = string + "#"}
           else {string = string + " "}
         };
       string = string + "\n";
-    }
     }
 }
 console.log(string);
