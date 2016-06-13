@@ -25,9 +25,8 @@ for (var i = 1; i <= size; i++) {
                 console.log("#");
             }
         }
-        console.log("\n");
     } 
-    //linea par 
+    //linea par
     else {
         for (var k = 1; k <= size; k++) {
             if (k % 2 != 0) {
@@ -36,6 +35,5 @@ for (var i = 1; i <= size; i++) {
                 console.log(" ")
             }
         }
-        console.log("\n");
     }
 }
