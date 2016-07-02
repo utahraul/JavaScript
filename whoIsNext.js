@@ -9,7 +9,7 @@ var whoIsNext = function(names, number){
   }
   else{
     for(i=1; queue.length < number; i++){
-      queue = queue + queue[i]
+      queue = queue +(queue[i] + queue[i])
     }
     console.log(queue[number])
     };
