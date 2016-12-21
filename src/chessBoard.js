@@ -22,7 +22,7 @@ for (var i = 1; i <= size; i++) {
       for (var j = 1; j <= size; j++) {
         if (j % 2 != 0) {string = string + " "}
         else {string = string + "#"}
-      };
+      }
       string = string + "\n";
     }
     //linea par
@@ -30,7 +30,7 @@ for (var i = 1; i <= size; i++) {
         for (var k = 1; k <= size; k++) {
           if (k % 2 != 0) {string = string + "#"}
           else {string = string + " "}
-        };
+        }
       string = string + "\n";
     }
 }

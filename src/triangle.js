@@ -11,5 +11,7 @@ function oneMore(whatIWantToPrint, timesToPrint){
   while (b.length <= timesToPrint){
     console.log(b);
     b = b + whatIWantToPrint;
-  };
+  }
 }
+
+module.exports = oneMore;

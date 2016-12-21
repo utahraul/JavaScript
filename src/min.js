@@ -11,6 +11,5 @@ var min = function(valueA, valueB) {
     else {
     return(minValue)
     }
-    console.log (minValue);
 };
 min (2,1);
