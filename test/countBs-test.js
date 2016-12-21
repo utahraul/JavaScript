@@ -8,5 +8,4 @@ describe('countBs', function() {
     var count4Bs = countBs("BBBB");
     expect(count4Bs).to.equal(4);
   });
-
 });
