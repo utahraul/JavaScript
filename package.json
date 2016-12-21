@@ -1,0 +1,27 @@
+{
+  "name": "eloquentJavascript",
+  "version": "1.0.0",
+  "description": "http://eloquentjavascript.net/",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utahraul/stringCalculator.git"
+  },
+  "author": "Raúl",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/utahraul/JavaScript/issues"
+  },
+  "homepage": "https://github.com/utahraul/JavaScript#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2",
+    "sinon": "^1.17.6",
+    "sinon-chai": "^2.8.0"
+  }
+}
