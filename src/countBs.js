@@ -2,11 +2,12 @@
 
 var countBs = function(stringWithBs){
 var bs = 0;
- for(i =1; i <= stringWithBs.length; i ++){ var currentLetter = stringWithBs.charAt(i)
+ for(var i = 0; i <= stringWithBs.length; i ++){ var currentLetter = stringWithBs.charAt(i)
   if (currentLetter === "B") {
 bs = bs + 1;
 }
 }
-console.log(bs);
+return(bs);
 };
-countBs("bsdbfjkfjjdBjjfjjkdk fkBBBjddjdB");
+
+module.exports = countBs;

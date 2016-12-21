@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "http://eloquentjavascript.net/",
   "directories": {
-    "test": "tests"
+    "test": "test"
   },
   "scripts": {
     "test": "mocha"
