@@ -1,10 +1,28 @@
-var createArray = function(start, end) {
-  var arrayOfNumbers = [];
-  for (var i = start; i <= end; i++) {
-    arrayOfNumbers.push(i);
+var range = function(start, end, step) {
+  console.log(step);
+  if (step === undefined) {
+    step = 1;
   }
-  return arrayOfNumbers;
-};
+  console.log(step);
+  var arrayOfNumbers = [];
+  if(start > end){
+    for (var i = start; i <= end; i = i + step) {
+        arrayOfNumbers.push(i);
+      }
+      console.log(arrayOfNumbers);
+      return arrayOfNumbers;
+  }
+else if(start < end) {
+    for (i = start; i >= end; i = i + step) {
+        arrayOfNumbers.push(i);
+      }
+      console.log(arrayOfNumbers);
+      return arrayOfNumbers;
+}
+
+else{console.log(start + "es igual a " +  end);
+}
+}
 
 var sum = function(arrayOfNumbers) {
   var total = 0;
@@ -16,8 +34,8 @@ var sum = function(arrayOfNumbers) {
   return total;
 };
 
-var sumOfARange = function(start, end) {
-  return sum(createArray(start, end));
+var sumOfARange = function(start, end, step) {
+  return sum(range(start, end, step));
 };
 
 module.exports = sumOfARange;
