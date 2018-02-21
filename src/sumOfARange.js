@@ -1,28 +1,25 @@
 var range = function(start, end, step) {
-  console.log(step);
   if (step === undefined) {
     step = 1;
   }
-  console.log(step);
   var arrayOfNumbers = [];
-  if(start > end){
+  if (start < end) {
     for (var i = start; i <= end; i = i + step) {
-        arrayOfNumbers.push(i);
-      }
-      console.log(arrayOfNumbers);
-      return arrayOfNumbers;
-  }
-else if(start < end) {
+      arrayOfNumbers.push(i);
+    }
+    console.log(arrayOfNumbers);
+    return arrayOfNumbers;
+  } else if (start > end) {
     for (i = start; i >= end; i = i + step) {
-        arrayOfNumbers.push(i);
-      }
-      console.log(arrayOfNumbers);
-      return arrayOfNumbers;
-}
-
-else{console.log(start + "es igual a " +  end);
-}
-}
+      arrayOfNumbers.push(i);
+    }
+    console.log(arrayOfNumbers);
+    return arrayOfNumbers;
+  } else {
+    console.log(start + " es igual a " + end);
+    return arrayOfNumbers;
+  }
+};
 
 var sum = function(arrayOfNumbers) {
   var total = 0;

@@ -37,3 +37,10 @@ describe("sumOfARange", function() {
     expect(sumOf1to10Range).to.equal(14);
   });
 });
+
+describe("sumOfARange", function() {
+    it("sumOfARange() should return 0 if the values 1 and 1 and any step are passed in", function() {
+      var sumOf1to10Range = sumOfARange(1, 1, 1);
+      expect(sumOf1to10Range).to.equal(0);
+    });
+  });
