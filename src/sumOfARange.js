@@ -13,12 +13,11 @@ var sum = function(arrayOfNumbers) {
     numberToAdd = arrayOfNumbers[a];
     total = total + numberToAdd;
   }
-  //return(total);
-  console.log(total);
+  return total;
 };
 
 var sumOfARange = function(start, end) {
-  sum(createArray(start, end));
+  return sum(createArray(start, end));
 };
 
 module.exports = sumOfARange;
