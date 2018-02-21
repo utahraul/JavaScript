@@ -15,6 +15,7 @@ jdk:
   - oraclejdk8
 script:
   - sonar-scanner
+  - npm test
 cache:
   directories:
     - '$HOME/.sonar/cache'
