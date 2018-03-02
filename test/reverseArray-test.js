@@ -6,6 +6,6 @@ var reverseArray = require("./../src/reverseArray.js");
 describe("reverseArray", function() {
   it("reverseArray() should return [C,B,A] if the array [A,B,C] is passed in", function() {
     var arrayReversed = reverseArray(['A','B','C']);
-    expect(arrayReversed).to.equal(['C','B','A']);
+    expect(arrayReversed).to.deep.equal(['C','B','A']);
   });
 });
