@@ -1,14 +1,14 @@
 before_script: chmod 0777 ./node_modules/.bin/mocha
 language: node_js
 node_js:
-  - "6"
-  - "6.1"
+  - "6.10.3"
+  - "8.9.4"
 
 dist: trusty
 sudo: required
 
 addons:
-  sonarqube:
+  sonarcloud:
     token:
       secure: "bcf41583087483f18d4d4ef85b31ad2e5ce4ffcc"
 jdk:
